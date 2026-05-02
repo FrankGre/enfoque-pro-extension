@@ -1,0 +1,31 @@
+/* 1. Animación suave para la "Limpieza" */
+.basura-oculta {
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    filter: blur(12px) grayscale(100%) !important;
+    opacity: 0.05 !important;
+    pointer-events: none !important;
+    transform: scale(0.95);
+}
+
+/* 2. Resaltado del Contenido Principal (Efecto Enfoque) */
+.contenido-enfocado {
+    transition: all 0.5s ease-in-out !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
+    border-radius: 12px !important;
+    padding: 30px !important;
+    background-color: #ffffff !important;
+    z-index: 9999 !important;
+    position: relative !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* 3. Fondo de la página para evitar distracciones */
+body.limpieza-activa {
+    background-color: #f0f2f5 !important;
+    transition: background-color 1s ease;
+}
+
+/* 4. Ocultar scrollbars de elementos basura para que no distraigan */
+.basura-oculta::-webkit-scrollbar {
+    display: none;
+}

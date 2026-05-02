@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Importamos Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { width: 280px; background-color: #f4f7f6; }
+    .card { border: none; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .btn-pro { 
+      background: linear-gradient(45deg, #6366f1, #a855f7); 
+      border: none; 
+      color: white; 
+      font-weight: bold;
+    }
+    .btn-pro:hover { opacity: 0.9; color: white; }
+    .badge-free { font-size: 0.7rem; vertical-align: middle; }
+  </style>
+</head>
+<body class="p-3">
+
+  <div class="card p-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h6 class="m-0 fw-bold">Enfoque Pro <span class="badge bg-secondary badge-free">v1.0</span></h6>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="limpiar">
+      </div>
+    </div>
+
+    <p class="text-muted small">Elimina distracciones visuales con un solo clic.</p>
+
+    <div class="d-grid gap-2">
+      <!-- Botón principal estilizado con Bootstrap -->
+      <button id="btnAction" class="btn btn-primary btn-sm shadow-sm">
+        ✨ Limpiar Página
+      </button>
+      
+      <hr class="my-2">
+
+      <!-- Sección de Monetización -->
+      <button class="btn btn-pro btn-sm mb-1">
+        ⭐ Desbloquear Premium
+      </button>
+      
+      <div class="d-flex justify-content-between mt-2">
+        <a href="#" class="btn btn-outline-warning btn-sm w-100 me-1" style="font-size: 0.7rem;">
+          ☕ Café
+        </a>
+        <a href="#" class="btn btn-outline-info btn-sm w-100 ms-1" style="font-size: 0.7rem;">
+          ❓ Ayuda
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
